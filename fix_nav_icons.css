@@ -1,0 +1,125 @@
+/* Navbar icons styling */
+.topbar__actions .action {
+  background: transparent !important;
+  border: none !important;
+  padding: 8px 12px !important;
+  border-radius: 8px !important;
+  color: var(--text) !important;
+  cursor: pointer !important;
+  font-size: 18px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: background-color 0.2s ease;
+}
+
+.topbar__actions .action:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Profile button in topbar */
+.topbar__actions .action.profile img {
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 50% !important;
+  border: 1px solid var(--border) !important;
+  object-fit: cover !important;
+}
+
+/* Nav buttons (Home, Friends, Chat, Notifications) */
+.nav-buttons ul {
+  display: flex;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  justify-content: flex-start;
+  position: relative;
+  z-index: 1;
+}
+
+.nav-buttons .nav-item {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 9999px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.nav-buttons .nav-item.active,
+.nav-buttons .nav-item:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.nav-buttons .nav-link {
+  color: var(--text);
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  position: relative;
+  z-index: 3;
+}
+
+/* Profile summary card pill */
+.profile-summary-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 9999px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  transition: background-color 0.2s ease;
+}
+
+.profile-summary-card:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.profile-summary-initials {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #1877f2; /* Meta blue */
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.profile-summary-card div > div {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.profile-summary-card div > div > div:first-child {
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.profile-summary-card div > div > div:last-child {
+  font-size: 13px;
+  color: #ccc;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Remove bell emoji from notifications */
+.notifications-icon {
+  display: none !important;
+}
